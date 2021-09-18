@@ -1,0 +1,233 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Courier New', Courier, monospace;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*custom */
+
+.bg-img{
+    background-image: url(assets/media/banner.jpg);
+    height:600px;
+    position: relative;
+    
+}
+.dark{
+    filter:opacity(50%)
+
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:80px
+}
+.cont{
+    position:absolute;
+    background-color: white;
+    width: 70%;
+}
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icons {  
+    height: 70px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.abs{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    color: white;
+    font-weight: bold;
+}
+.about{
+    margin: 100px 0;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;    
+}
+
+.icon-bg{
+    background-color: white;
+    clip-path: circle();
+    width:30px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(123, 123, 124);
+    margin: 10px;    
+}
+
+.white{
+color:white;
+margin: 10px;
+}
+.abs button{
+    background-color: tomato;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 10px 20px;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 20px;
+    color: rgb(123, 123, 124);
+    text-decoration: underline;
+}
+h3{
+    font-size: 13px;
+    color:rgb(123, 123, 124);
+}
+p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+.resize{
+    height: 150px;
+    object-fit: cover;
+}
+
+.circle, .team, .gallery, .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+}
+.col-1 img{
+    width:120px;
+    margin:10px;
+    object-fit: cover;
+}
+.team{
+    flex-direction: column;
+}
+.circle img{
+    clip-path: circle();
+    width:90px;
+    margin: 10px;
+}
+
+.fas{
+    font-size:25px;
+}
+.box-1,.box-2,.box-3,.box-4{
+    width:150px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.box-1{
+    background-color: rgb(115, 175, 148);
+}
+.box-2{
+    background-color: orange;
+}
+.box-3{
+    background-color: rgb(95, 163, 241);
+}
+.box-4{
+    background-color: rgb(145, 204, 127);
+}
+
+.skills{
+    float:left;
+    width:65%;
+}
+.skill{
+    width: 140px;
+    background-color: orange;
+    margin: 5px;
+}
+.right{
+    float:right;
+    width: 20%;
+}
+
+.clearfix::before, .clearfix::after{
+ content:"";
+ display: table;
+}
+.clearfix::after{
+    clear: both;
+}
